@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Форма отзыва</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img src="img/logo-mobile.svg" width="102" height="84" alt="Sedona">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span><img src="img/icon-menu.svg" alt="Открыть меню"></button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+          <button class="main-nav__close" type="button"><span class="visually-hidden">Закрыть меню</span><img src="img/icon-cross.svg" alt="Закрыть меню"></button>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a>
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="page--main">
+    <img class="page--main__intro-pic" src="img/back-desktop.jpg" alt="">
+    <svg class="page--main__into-text" width="460" height="80" viewBox="0 0 460 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M44.3 21.7C40.7 18.7 36.2 16.7 31.4 16.7C27.8 16.7 23.1 18.8 23.1 23C23.1 27.4 28.4 29.1 31.7 30.1L36.7 31.6C47.1 34.7 55.2 39.9 55.2 52C55.2 59.4 53.4 67.1 47.5 72.1C41.6 77.1 33.8 79.1 26.3 79.1C16.9 79.1 7.6 75.9 0 70.6L8.3 54.9C13.2 59.2 18.9 62.6 25.6 62.6C30.2 62.6 35 60.3 35 55.1C35 49.6 27.4 47.8 23.2 46.6C10.8 43.3 2.8 40.1 2.8 25.6C2.8 10.4 13.6 0.5 28.6 0.5C36.1 0.5 45.4 2.9 52 6.7L44.3 21.7Z" fill="white"/>
+      <path d="M91.6 19V31.5H113.5V48H91.6V60.9H114.8V77.4H72.2V2.5H114.8V19H91.6Z" fill="white"/>
+      <path d="M129.2 2.5H156.8C177.6 2.5 194.8 18.9 194.8 39.9C194.8 60.9 177.5 77.3 156.8 77.3H129.2V2.5ZM148.7 60.8H153.1C164.7 60.8 174.6 54.4 174.6 39.9C174.6 26.5 165.8 19 153.3 19H148.7V60.8Z" fill="white"/>
+      <path d="M286.7 38.5C286.7 62.7 269.3 79.8 245.3 79.8C221.3 79.8 203.9 62.7 203.9 38.5C203.9 15.9 223.8 0 245.3 0C266.8 0 286.7 15.9 286.7 38.5ZM224.1 38.6C224.1 51.5 233.6 60.9 245.2 60.9C256.8 60.9 266.3 51.5 266.3 38.6C266.3 28.3 256.8 18.8 245.2 18.8C233.7 18.9 224.1 28.3 224.1 38.6Z" fill="white"/>
+      <path d="M297 2.5H316.5L352.1 48.3H352.3V2.5H371.8V77.3H352.3L316.7 31.4H316.5V77.3H297V2.5Z" fill="white"/>
+      <path d="M407.1 64.3L401.9 77.3H381.3L410.1 2.5H431.3L459.5 77.3H438.8L433.9 64.3H407.1ZM420.7 25.6H420.5L412.5 49.4H428.7L420.7 25.6Z" fill="white"/>
+    </svg>
+    <svg class="page--main__intro-decoration" width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M249.6 23.7L0 0V57H249.6H600L249.6 0V23.7Z" fill="white"/>
+      <path d="M950.4 23.7V0L600 57H950.4H1199.9V0L950.4 23.7Z" fill="white"/>
+    </svg>
+    <section class="reviews">
+      <h2 class="reviews--title">Оставьте свой отзыв</h2>
+      <p class="reviews__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных достопримечательностях</p>
+      <form class="reviews" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="reviews__form-impression">
+          <legend class="reviews__form-impression--legend">Ваше общее впечатление:</legend>
+          <ul class="reviews__form-impression--list">
+            <li class="reviews__form-impression--item">
+              <input type="radio" id="positive" name="impression">
+              <label class="" for="positive">Скорее положительное</label>
+            </li>
+            <li class="reviews__form-impression--item">
+              <input type="radio" id="negative" name="impression">
+              <label class="" for="negative">Скорее отрицательное</label>
+            </li>
+            <li class="reviews__form-impression--item">
+              <input type="radio" id="hard-to-answer" name="impression">
+              <label class="" for="hard-to-answer">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="reviews__your-name">
+          <legend class="reviews__your-name--legend">Представьтесь:</legend>
+          <label class="reviews__your-name--label" for="first-name">Имя*:</label>
+          <input class="reviews__your-name--input" type="text" id="first-name" name="first-name" placeholder="Петр" required>
+          <label class="reviews__your-name--label" for="last-name">Фамилия*:</label>
+          <input class="reviews__your-name--input" type="text" id="last-name" name="last-name" placeholder="Иванов" required>
+          <label class="reviews__your-name--label" for="surname">Отчество:</label>
+          <input class="reviews__your-name--input" type="text" id="surname" name="surname" placeholder="Александрович">
+        </fieldset>
+        <fieldset class="reviews__contacts">
+          <legend class="reviews__contacts--legend">Контактная информация:</legend>
+          <label class="reviews__contacts--label" for="tel">Телефон*:</label>
+          <input class="reviews__contacts--input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+          <button>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+            </svg>
+          </button>
+          <label class="reviews__contacts--label" for="e-mail">Электронная почта*:</label>
+          <input class="reviews__contacts--input" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
+          <button>
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+            </svg>
+          </button>
+        </fieldset>
+        <fieldset class="reviews__visited">
+          <legend class="reviews__visited--legend">Посещенные достопримечательности:</legend>
+          <input class="reviews__visited--input" type="checkbox" id="bridge" name="visited-Devil's bridge">
+          <label for="bridge">Мост дьявола</label>
+          <input class="reviews__visited--input" type="checkbox" id="mount" name="visited-Mount Bell">
+          <label for="mount">Гора-Колокол</label>
+          <input class="reviews__visited--input" type="checkbox" id="park" name="visited-Slide-park">
+          <label for="park">Слайд-парк</label>
+          <input class="reviews__visited--input" type="checkbox" id="rocks" name="visited-Red rocks">
+          <label for="rocks">Красные скалы</label>
+        </fieldset>
+        <fieldset class="reviews__write-emotions">
+          <legend class="reviews__write-emotions--legend">Опишите свои эмоции:</legend>
+          <label>
+            <input class="reviews__write-emotions" type="text" name="text" placeholder="Напишите подробно свои эмоции">
+          </label>
+        </fieldset>
+        <button class="reviews__send">Отправить отзыв</button>
+        <small>* — обязательные поля</small>
+      </form>
+    </section>
+  </main>
+  <footer class="page_footer">
+    <section class="contacts">
+      <p class="contacts__subtitle">#VisitSedona</p>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-item">
+          <a class="footer__social-item--link" href="#">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Twitter">
+              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="footer__social-item--link" href="#">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="FaceBook">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="footer__social-item--link" href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="YouTube">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copyright">Разработано
+        <a href="#">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg>
+        </a>
+      </p>
+    </section>
+  </footer>
+</header>
+
+</body>
+</html>
